@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoorMansTSqlFormatterLib", "PoorMansTSqlFormatterLib\PoorMansTSqlFormatterLib.csproj", "{ADBDFDCA-CAB6-4569-9151-0BD42E65B400}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoorMansTSqlFormatterDemo", "PoorMansTSqlFormatterDemo\PoorMansTSqlFormatterDemo.csproj", "{9C7499A9-0A53-499B-8320-5CF4ECB72683}"
