@@ -105,6 +105,7 @@ namespace PoorMansTSqlFormatterLib.Interfaces
         public const string ENAME_BRACKET_QUOTED_NAME = "BracketQuotedName";
         public const string ENAME_COMMA = "Comma";
         public const string ENAME_PERIOD = "Period";
+        public const string ENAME_EXCLAMATION_MARK = "ExclamationMark";
         public const string ENAME_SEMICOLON = "Semicolon";
         public const string ENAME_SCOPERESOLUTIONOPERATOR = "ScopeResolutionOperator";
         public const string ENAME_ASTERISK = "Asterisk";
