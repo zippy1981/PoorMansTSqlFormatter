@@ -183,6 +183,7 @@ namespace PoorMansTSqlFormatterLib.Formatters
 
                 case SqlXmlConstants.ENAME_COMMA:
                 case SqlXmlConstants.ENAME_PERIOD:
+                case SqlXmlConstants.ENAME_EXCLAMATION_MARK:
                 case SqlXmlConstants.ENAME_SEMICOLON:
                 case SqlXmlConstants.ENAME_ASTERISK:
                 case SqlXmlConstants.ENAME_EQUALSSIGN:
@@ -271,6 +272,7 @@ namespace PoorMansTSqlFormatterLib.Formatters
                     case SqlTokenType.CloseParens:
                     case SqlTokenType.Comma:
                     case SqlTokenType.Period:
+                    case SqlTokenType.ExclamationMark:
                     case SqlTokenType.Semicolon:
                     case SqlTokenType.Colon:
                     case SqlTokenType.Asterisk:

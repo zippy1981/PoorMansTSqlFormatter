@@ -498,7 +498,7 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                             }
                             else
                             {
-                                currentTokenizationType = SqlTokenizationType.OtherNode;
+                                //currentTokenizationType = SqlTokenizationType.OtherNode;
                                 CompleteToken(ref currentTokenizationType, tokenContainer, currentTokenValue);
                                 ProcessOrOpenToken(ref currentTokenizationType, currentTokenValue, currentCharacter, tokenContainer);
                             }
@@ -803,7 +803,7 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                     break;
 
                 case SqlTokenizationType.SingleExclamation:
-                    tokenContainer.Add(new Token(SqlTokenType.OtherNode, "!"));
+                    tokenContainer.Add(new Token(SqlTokenType.ExclamationMark, "!"));
                     break;
 
 				case SqlTokenizationType.SinglePipe:

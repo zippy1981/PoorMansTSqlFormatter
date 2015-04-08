@@ -1186,6 +1186,7 @@ namespace PoorMansTSqlFormatterLib.Parsers
                     case SqlTokenType.BracketQuotedName:
                     case SqlTokenType.Asterisk:
                     case SqlTokenType.Period:
+                    case SqlTokenType.ExclamationMark:
                     case SqlTokenType.OtherOperator:
                     case SqlTokenType.NationalString:
                     case SqlTokenType.String:
@@ -1310,6 +1311,8 @@ namespace PoorMansTSqlFormatterLib.Parsers
                     return SqlXmlConstants.ENAME_COMMA;
                 case SqlTokenType.Period:
                     return SqlXmlConstants.ENAME_PERIOD;
+                case SqlTokenType.ExclamationMark:
+                    return SqlXmlConstants.ENAME_EXCLAMATION_MARK;
                 case SqlTokenType.NationalString:
                     return SqlXmlConstants.ENAME_NSTRING;
                 case SqlTokenType.String:
