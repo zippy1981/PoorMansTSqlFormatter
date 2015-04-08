@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FieldEffect.PoorMansTSqlFormatter</id>
+    <version>1.5.1.1</version>
+    <title>FieldEffect.PoorMansTSqlFormatter</title>
+    <authors>taok</authors>
+    <description>
+      A small free .Net 2.0 library (with demo UI, command-line bulk formatter, SSMS/Visual Studio add-in, notepad++ plugin, winmerge plugin, and web service) for reformatting and coloring T-SQL code to the user's preferences. http://www.architectshack.com/PoorMansTSqlFormatter.ashx
+    </description>
+    <summary>
+      A small free .Net 2.0 library (with demo UI, command-line bulk formatter, SSMS/Visual Studio add-in, notepad++ plugin, winmerge plugin, and web service) for reformatting and coloring T-SQL code to the user's preferences. http://www.architectshack.com/PoorMansTSqlFormatter.ashx
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/TaoK/PoorMansTSqlFormatter</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/TaoK/PoorMansTSqlFormatter/blob/master/LICENSE.txt</licenseUrl>
+    <copyright>Copyright  2015</copyright>
+    <dependencies>
+        <!--
+        <group targetFramework="net40">
+          <dependency id="log4net" version="1.2.10" />
+        </group>
+        -->
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+  </files>
+</package>
