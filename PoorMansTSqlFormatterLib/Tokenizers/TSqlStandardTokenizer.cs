@@ -803,7 +803,7 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                     break;
 
                 case SqlTokenizationType.SingleExclamation:
-                    tokenContainer.Add(new Token(SqlTokenType.OtherNode, "!"));
+                    tokenContainer.Add(new Token(SqlTokenType.ExclamationMark, "!"));
                     break;
 
 				case SqlTokenizationType.SinglePipe:
