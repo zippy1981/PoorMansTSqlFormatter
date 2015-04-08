@@ -64,3 +64,5 @@ _ReSharper*/
 # Office Temp Files
 ~$*
 Backup/*
+FieldEffect.PoorMansTSQLFormatter.Packager/lib/*/*.dll
+FieldEffect.PoorMansTSQLFormatter.Packager/*.nupkg
