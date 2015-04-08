@@ -73,6 +73,11 @@
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y "$(TargetPath)" "$(SolutionDir)FieldEffect.PoorMansTSqlFormatter.Packager\lib\net20\"
+xcopy /Y "$(TargetDir)LinqBridge.dll" "$(SolutionDir)FieldEffect.PoorMansTSqlFormatter.Packager\lib\net20\"
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
