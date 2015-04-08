@@ -571,6 +571,7 @@ namespace PoorMansTSqlFormatterLib.Formatters
                     break;
 
                 case SqlXmlConstants.ENAME_PERIOD:
+                case SqlXmlConstants.ENAME_EXCLAMATION_MARK:
                 case SqlXmlConstants.ENAME_SEMICOLON:
                 case SqlXmlConstants.ENAME_SCOPERESOLUTIONOPERATOR:
                     //always ignores requested word spacing, and doesn't request a following space either.
