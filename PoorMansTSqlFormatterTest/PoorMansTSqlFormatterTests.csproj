@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,6 +14,11 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartupObject>PoorMansTSqlFormatterTests.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -103,6 +109,7 @@
     <Content Include="Data\InputSql\25_Merges.txt" />
     <Content Include="Data\InputSql\26_DataTypesAndSynonyms.txt" />
     <Content Include="Data\InputSql\27_OtherSqlFlavourSupport.txt" />
+    <Content Include="Data\InputSql\28_MSAccess_Exclamation.txt" />
     <Content Include="Data\ParsedSql\01_SimpleTypes_StrangeRules.txt" />
     <Content Include="Data\ParsedSql\03_SimpleSelect_MS.txt" />
     <Content Include="Data\ParsedSql\04_MiscProceduralSample_Unstructured.txt" />
@@ -154,6 +161,7 @@
     <Content Include="Data\StandardFormatSql\27_OtherSqlFlavourSupport.txt" />
     <Content Include="Data\StandardFormatSql\24_InsertsAndOutputs%28KeywordStandardization=true,ExpandCommaLists=false%29.txt" />
     <Content Include="Data\StandardFormatSql\05_ComplexDDL%28NewClauseLineBreaks=2,NewStatementLineBreaks=3%29.txt" />
+    <Content Include="Data\StandardFormatSql\28_MSAccess_Exclamation.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PoorMansTSqlFormatterLib\PoorMansTSqlFormatterLib.csproj">
