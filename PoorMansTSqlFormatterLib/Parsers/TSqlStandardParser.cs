@@ -1191,6 +1191,7 @@ namespace PoorMansTSqlFormatterLib.Parsers
                     case SqlTokenType.NationalString:
                     case SqlTokenType.String:
                     case SqlTokenType.QuotedString:
+                    case SqlTokenType.JetDate:
                     case SqlTokenType.Number:
                     case SqlTokenType.BinaryValue:
                     case SqlTokenType.MonetaryValue:
