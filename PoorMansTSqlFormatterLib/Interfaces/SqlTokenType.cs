@@ -46,6 +46,7 @@ namespace PoorMansTSqlFormatterLib.Interfaces
         BinaryValue,
         OtherOperator,
         PseudoName,
-        ExclamationMark
+        ExclamationMark,
+        JetDate
     }
 }
