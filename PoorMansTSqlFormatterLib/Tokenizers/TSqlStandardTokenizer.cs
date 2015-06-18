@@ -362,6 +362,25 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                             }
                             break;
 
+                        case SqlTokenizationType.JetDate:
+                            if (currentCharacter == '#')
+                            {
+                                if (inputReader.Peek() == (int)'#')
+                                {
+                                    inputReader.Read();
+                                    currentTokenValue.Append(currentCharacter);
+                                }
+                                else
+                                {
+                                    CompleteToken(ref currentTokenizationType, tokenContainer, currentTokenValue);
+                                }
+                            }
+                            else
+                            {
+                                currentTokenValue.Append(currentCharacter);
+                            }
+                            break;
+
                         case SqlTokenizationType.QuotedString:
                             if (currentCharacter == '"')
                             {
