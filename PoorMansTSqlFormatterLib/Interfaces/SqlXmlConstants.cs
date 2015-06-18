@@ -112,6 +112,7 @@ namespace PoorMansTSqlFormatterLib.Interfaces
         public const string ENAME_EQUALSSIGN = "EqualsSign";
         public const string ENAME_ALPHAOPERATOR = "AlphaOperator";
         public const string ENAME_OTHEROPERATOR = "OtherOperator";
+        public const string ENAME_JETDATE = "JetDate";
 
         public const string ENAME_AND_OPERATOR = "And";
         public const string ENAME_OR_OPERATOR = "Or";
