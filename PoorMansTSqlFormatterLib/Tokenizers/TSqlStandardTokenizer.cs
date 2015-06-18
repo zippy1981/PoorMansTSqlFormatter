@@ -667,6 +667,10 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
             {
                 currentTokenizationType = SqlTokenizationType.String;
             }
+            else if (currentCharacter == '#')
+            {
+                currentTokenizationType = SqlTokenizationType.JetDate;
+            }
             else if (currentCharacter == '"')
             {
                 currentTokenizationType = SqlTokenizationType.QuotedString;
