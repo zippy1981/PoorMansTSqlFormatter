@@ -171,6 +171,9 @@ namespace PoorMansTSqlFormatterLib.Formatters
                 case SqlXmlConstants.ENAME_STRING:
                     state.AddOutputContent("'" + contentElement.InnerText.Replace("'", "''") + "'", Interfaces.SqlHtmlConstants.CLASS_STRING);
                     break;
+                case SqlXmlConstants.ENAME_JETDATE:
+                    state.AddOutputContent("#" + contentElement.InnerText + "#", Interfaces.SqlHtmlConstants.CLASS_STRING);
+                    break;
                 case SqlXmlConstants.ENAME_NSTRING:
                     state.AddOutputContent("N'" + contentElement.InnerText.Replace("'", "''") + "'", Interfaces.SqlHtmlConstants.CLASS_STRING);
                     break;
