@@ -1191,6 +1191,7 @@ namespace PoorMansTSqlFormatterLib.Parsers
                     case SqlTokenType.NationalString:
                     case SqlTokenType.String:
                     case SqlTokenType.QuotedString:
+                    case SqlTokenType.JetDate:
                     case SqlTokenType.Number:
                     case SqlTokenType.BinaryValue:
                     case SqlTokenType.MonetaryValue:
@@ -1317,6 +1318,8 @@ namespace PoorMansTSqlFormatterLib.Parsers
                     return SqlXmlConstants.ENAME_NSTRING;
                 case SqlTokenType.String:
                     return SqlXmlConstants.ENAME_STRING;
+                case SqlTokenType.JetDate:
+                    return SqlXmlConstants.ENAME_JETDATE;
                 case SqlTokenType.QuotedString:
                     return SqlXmlConstants.ENAME_QUOTED_STRING;
                 case SqlTokenType.OtherOperator:

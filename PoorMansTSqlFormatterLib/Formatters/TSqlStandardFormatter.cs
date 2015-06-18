@@ -509,6 +509,14 @@ namespace PoorMansTSqlFormatterLib.Formatters
                     state.WordSeparatorExpected = true;
                     break;
 
+                case SqlXmlConstants.ENAME_JETDATE:
+                    WhiteSpace_SeparateWords(state);
+                    //string outValue = null;
+                    outValue = "#" + contentElement.InnerText + "#";
+                    state.AddOutputContent(outValue, Interfaces.SqlHtmlConstants.CLASS_STRING);
+                    state.WordSeparatorExpected = true;
+                    break;
+
                 case SqlXmlConstants.ENAME_BRACKET_QUOTED_NAME:
                     WhiteSpace_SeparateWords(state);
                     state.AddOutputContent("[" + contentElement.InnerText.Replace("]", "]]") + "]");

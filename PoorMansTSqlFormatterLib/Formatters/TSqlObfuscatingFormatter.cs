@@ -220,6 +220,13 @@ namespace PoorMansTSqlFormatterLib.Formatters
                     state.SpaceExpectedForAnsiString = true;
                     break;
 
+                case SqlXmlConstants.ENAME_JETDATE:
+                    state.SpaceIfExpectedForAnsiString();
+                    state.SpaceExpected = false;
+                    state.AddOutputContent("#" + contentElement.InnerText + "#");
+                    state.SpaceExpectedForAnsiString = true;
+                    break;
+
                 case SqlXmlConstants.ENAME_NSTRING:
                     state.AddOutputContent("N'" + contentElement.InnerText.Replace("'", "''") + "'");
                     state.SpaceExpectedForAnsiString = true;

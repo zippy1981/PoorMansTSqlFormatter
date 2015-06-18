@@ -362,6 +362,25 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                             }
                             break;
 
+                        case SqlTokenizationType.JetDate:
+                            if (currentCharacter == '#')
+                            {
+                                if (inputReader.Peek() == (int)'#')
+                                {
+                                    inputReader.Read();
+                                    currentTokenValue.Append(currentCharacter);
+                                }
+                                else
+                                {
+                                    CompleteToken(ref currentTokenizationType, tokenContainer, currentTokenValue);
+                                }
+                            }
+                            else
+                            {
+                                currentTokenValue.Append(currentCharacter);
+                            }
+                            break;
+
                         case SqlTokenizationType.QuotedString:
                             if (currentCharacter == '"')
                             {
@@ -520,6 +539,7 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                     || currentTokenizationType.Value == SqlTokenizationType.NString
                     || currentTokenizationType.Value == SqlTokenizationType.QuotedString
                     || currentTokenizationType.Value == SqlTokenizationType.BracketQuotedName
+                    || currentTokenizationType.Value == SqlTokenizationType.JetDate
                     )
                     tokenContainer.HasUnfinishedToken = true;
 
@@ -666,6 +686,10 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
             else if (currentCharacter == '\'')
             {
                 currentTokenizationType = SqlTokenizationType.String;
+            }
+            else if (currentCharacter == '#')
+            {
+                currentTokenizationType = SqlTokenizationType.JetDate;
             }
             else if (currentCharacter == '"')
             {
@@ -826,6 +850,10 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                     tokenContainer.Add(new Token(SqlTokenType.String, currentValue.ToString()));
                     break;
 
+                case SqlTokenizationType.JetDate:
+                    tokenContainer.Add(new Token(SqlTokenType.JetDate, currentValue.ToString()));
+                    break;
+
                 case SqlTokenizationType.QuotedString:
                     tokenContainer.Add(new Token(SqlTokenType.QuotedString, currentValue.ToString()));
                     break;
@@ -896,6 +924,7 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
             DecimalValue,
             FloatValue,
             PseudoName,
+            JetDate,
 
             //temporary types
             SingleAsterisk,
