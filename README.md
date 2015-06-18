@@ -7,11 +7,6 @@ for reformatting T-SQL code.
 
 ### Features
 
-This fork of Poor Man's T-SQL Formatter (by Steve Russo - transistor1@github) has some
-enhancements to work with JET/ACE SQL for Microsoft Access; namely:
-* Correct exclamation mark (!) parsing, used in accessing dynamic property names within SQL
-* JET/ACE date formatting e.g. #1/1/1900 12:00:00 AM#
-
 * Simple Xml-based parse tree
 * Extensible, with possibility of supporting other SQL dialects (but none implemented)
 * Configurable according to SQL formatting preferences
@@ -28,6 +23,14 @@ enhancements to work with JET/ACE SQL for Microsoft Access; namely:
 * Works in Microsoft .Net framework, as well as Mono. The Winforms Demo App is not (yet?)
     available in Mono, but the library itself is fully functional, as is the command-line
     bulk formatting tool.
+
+### Features in this fork
+
+This fork of Poor Man's T-SQL Formatter (by Steve Russo - transistor1@github) has some
+enhancements to work with JET/ACE SQL for Microsoft Access; specifically:
+ * Correct exclamation mark (!) parsing, used in accessing dynamic property names within SQL
+ * JET/ACE date formatting e.g. #1/1/1900 12:00:00 AM#
+
 
 ### General Limitations
 
