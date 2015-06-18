@@ -901,6 +901,7 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
             DecimalValue,
             FloatValue,
             PseudoName,
+            JetDate,
 
             //temporary types
             SingleAsterisk,
