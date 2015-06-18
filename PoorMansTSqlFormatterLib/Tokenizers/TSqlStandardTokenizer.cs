@@ -850,6 +850,10 @@ namespace PoorMansTSqlFormatterLib.Tokenizers
                     tokenContainer.Add(new Token(SqlTokenType.String, currentValue.ToString()));
                     break;
 
+                case SqlTokenizationType.JetDate:
+                    tokenContainer.Add(new Token(SqlTokenType.JetDate, currentValue.ToString()));
+                    break;
+
                 case SqlTokenizationType.QuotedString:
                     tokenContainer.Add(new Token(SqlTokenType.QuotedString, currentValue.ToString()));
                     break;
