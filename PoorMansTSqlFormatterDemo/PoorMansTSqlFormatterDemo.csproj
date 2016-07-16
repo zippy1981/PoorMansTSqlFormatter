@@ -142,7 +142,9 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>Call $(ProjectDir)Postbuild_Merge.bat $(TargetDir)</PostBuildEvent>
-    <PreBuildEvent>Call $(ProjectDir)\PreBuild_Replace.bat $(SolutionDir) $(ProjectDir)</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>
